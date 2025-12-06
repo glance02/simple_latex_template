@@ -1,36 +1,35 @@
-% 测试简化版类文件
+% Test simplified English class file
 \documentclass{classTemplate}
 \bibliographystyle{plain}
 
 \begin{document}
 
-% 前言部分
+% Front matter
 \frontmatter
 \pagestyle{frontmatter}
 \input{Chapter/abstract.tex}
 
-% 目录
+% Table of contents
 \MakeContents
 
-% 主体部分
+% Main matter
 \mainmatter
 \pagestyle{mainmatter}
 
-% 使用标准的input命令包含章节文件
+% Use standard input command to include chapter files
 \input{Chapter/introduction.tex}
 \input{Chapter/chapter1.tex}
 
-% 以下内容用于测试各种功能，可以移除或保留
+% The following content is for testing various functions, can be removed or kept
 \input{Chapter/test.tex}
 
 \nocite{*}
-\bibliography{ref} % 引用参考文献文件 ref.bib
+\bibliography{ref} % Reference bibliography file ref.bib
 
-
-% 附录
+% Appendix
 \input{Chapter/appendix.tex}
 
-% 致谢
+% Acknowledgements
 \input{Chapter/acknowledgements.tex}
 
 \end{document}
