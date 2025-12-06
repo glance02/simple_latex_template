@@ -18,7 +18,7 @@
 % Remove fontspec related code as we're using pdfLaTeX
 
 % Based on book document class for English support
-\LoadClass[a4paper,twoside,openany,onecolumn,11pt,linespread=1.39]{book}[2020/10/01]
+\LoadClass[a4paper,twoside,openany,11pt]{book}[2025/12/06]
 
 %-------------------------------------------------------------------------------------------------
 % Necessary package loading
@@ -33,6 +33,8 @@
 \RequirePackage{amssymb} % Mathematical symbols
 \RequirePackage{hyperref} % Hyperlink support
 \RequirePackage{setspace} % Line spacing settings
+\setstretch{1.39}
+
 \RequirePackage{indentfirst} % First line indentation
 \RequirePackage{xstring} % String processing
 \RequirePackage{pgffor} % For foreach loops, supporting batch inclusion of chapter files
