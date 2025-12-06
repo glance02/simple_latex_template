@@ -183,10 +183,10 @@
 \newcommand\MakeContents{
     \newpage
     \vspace*{-10pt}
-    {\centering\linespread{1}\Large\bfseries Table of Contents\par}
+    {\centering\linespread{1}\Large\bfseries Contents\par}
     \vspace{12pt}
     \phantomsection
-    \addcontentsline{toc}{chapter}{Table of Contents}
+    \addcontentsline{toc}{chapter}{Contents}
     \@starttoc{toc}
     \clearpage
 }
