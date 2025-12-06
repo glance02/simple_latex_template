@@ -1,0 +1,36 @@
+% 测试简化版类文件
+\documentclass{classTemplate}
+\bibliographystyle{plain}
+
+\begin{document}
+
+% 前言部分
+\frontmatter
+\pagestyle{frontmatter}
+\input{Chapter/abstract.tex}
+
+% 目录
+\MakeContents
+
+% 主体部分
+\mainmatter
+\pagestyle{mainmatter}
+
+% 使用标准的input命令包含章节文件
+\input{Chapter/introduction.tex}
+\input{Chapter/chapter1.tex}
+
+% 以下内容用于测试各种功能，可以移除或保留
+\input{Chapter/test.tex}
+
+\nocite{*}
+\bibliography{ref} % 引用参考文献文件 ref.bib
+
+
+% 附录
+\input{Chapter/appendix.tex}
+
+% 致谢
+\input{Chapter/acknowledgements.tex}
+
+\end{document}
